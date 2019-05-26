@@ -1,35 +1,36 @@
-ä¸€ä¸ªç®€æ´çš„gitæ•™ç¨‹
+Ò»¸ö¼ò½àµÄgit½Ì³Ì
 https://www.liaoxuefeng.com/wiki/896043488029600/898732792973664
 
-========================åŸºæœ¬ç”¨æ³•=================================
-åˆå§‹åŒ–ä»“åº“ï¼ˆä¼šåœ¨å½“å‰ç›®å½•ä¸‹ç”Ÿæˆ.gitæ–‡ä»¶ï¼‰
+========================»ù±¾ÓÃ·¨=================================
+³õÊ¼»¯²Ö¿â£¨»áÔÚµ±Ç°Ä¿Â¼ÏÂÉú³É.gitÎÄ¼þ£©
 git init
 
-æ·»åŠ æ–‡ä»¶åˆ°gitä»“åº“
-git add æ–‡ä»¶å
-git commit -m "æ³¨é‡Š"
+Ìí¼ÓÎÄ¼þµ½git²Ö¿â
+git add ÎÄ¼þÃû
+git commit -m "×¢ÊÍ"
 
-========================é‡è¦æ¦‚å¿µ=================================
-gitçš„å‡ ä¸ªé‡è¦æ¦‚å¿µ
-å·¥ä½œåŒºï¼ˆWorking Directoryï¼‰
-æœ¬åœ°å¯ä»¥ç›´æŽ¥çœ‹åˆ°çš„ç›®å½•ï¼Œå³å½“å‰ç›´æŽ¥åšå‡ºä¿®æ”¹çš„ç›®å½•ã€‚
+========================ÖØÒª¸ÅÄî=================================
+gitµÄ¼¸¸öÖØÒª¸ÅÄî
+¹¤×÷Çø£¨Working Directory£©
+±¾µØ¿ÉÒÔÖ±½Ó¿´µ½µÄÄ¿Â¼£¬¼´µ±Ç°Ö±½Ó×ö³öÐÞ¸ÄµÄÄ¿Â¼¡£
 
-ç‰ˆæœ¬åº“ï¼Œå³.gitæ–‡ä»¶å¤¹ï¼ŒåŒ…æ‹¬æš‚å­˜åŒºï¼ˆstage æˆ–è€… indexï¼‰å’Œåˆ†æ”¯å’ŒHEADæŒ‡é’ˆã€‚
+°æ±¾¿â£¬¼´.gitÎÄ¼þ¼Ð£¬°üÀ¨ÔÝ´æÇø£¨stage »òÕß index£©ºÍ·ÖÖ§ºÍHEADÖ¸Õë¡£
 
-æš‚å­˜åŒºï¼ˆstage æˆ–è€… indexï¼‰
-git add æ–‡ä»¶åï¼Œå°±æ˜¯å°†æ–‡ä»¶ä»Žå·¥ä½œåŒºæ·»åŠ åˆ°æš‚å­˜åŒº
+ÔÝ´æÇø£¨stage »òÕß index£©
+git add ÎÄ¼þÃû£¬¾ÍÊÇ½«ÎÄ¼þ´Ó¹¤×÷ÇøÌí¼Óµ½ÔÝ´æÇø
 
-åˆ†æ”¯
-git commit -m "æ³¨é‡Š"ï¼Œå°±æ˜¯å°†å·¥ä½œåŒºä¸­çš„æ–‡ä»¶ä¸€èµ·æäº¤åˆ°å½“å‰åˆ†æ”¯ï¼Œå¯ä»¥å¤šæ¬¡ä½¿ç”¨addå‘æš‚å­˜åŒºæ·»åŠ å¤šä¸ªæ–‡ä»¶ï¼Œç„¶åŽä½¿ç”¨commitä¸€æ¬¡å°†æš‚å­˜åŒºçš„æ–‡ä»¶æäº¤åˆ°å½“å‰åˆ†æ”¯ã€‚
+·ÖÖ§
+git commit -m "×¢ÊÍ"£¬¾ÍÊÇ½«¹¤×÷ÇøÖÐµÄÎÄ¼þÒ»ÆðÌá½»µ½µ±Ç°·ÖÖ§£¬¿ÉÒÔ¶à´ÎÊ¹ÓÃaddÏòÔÝ´æÇøÌí¼Ó¶à¸öÎÄ¼þ£¬È»ºóÊ¹ÓÃcommitÒ»´Î½«ÔÝ´æÇøµÄÎÄ¼þÌá½»µ½µ±Ç°·ÖÖ§¡£
 
-=======================å¸¸ç”¨å‘½ä»¤==================================
+=======================³£ÓÃÃüÁî==================================
 
-æŸ¥çœ‹ä»“åº“çŠ¶æ€
+²é¿´²Ö¿â×´Ì¬
 git status
 
-æŸ¥çœ‹ä¸åŒï¼Œé»˜è®¤æ¯”è¾ƒå·¥ä½œåŒºå’Œæš‚å­˜åŒº
+²é¿´²»Í¬£¬Ä¬ÈÏ±È½Ï¹¤×÷ÇøºÍÔÝ´æÇø
 git diff
 
+=======================°æ±¾»ØÍË==================================
 
 
 
@@ -52,26 +53,30 @@ git diff
 
 
 
-åˆæ¬¡ä¸Šä¼ 
+
+
+
+
+³õ´ÎÉÏ´«
 git init
-git remote add origin ç½‘å€
+git remote add origin ÍøÖ·
 git add .
-git commit -m "æ³¨é‡Š"
-// git push ç½‘å€ åˆ†æ”¯å
+git commit -m "×¢ÊÍ"
+// git push ÍøÖ· ·ÖÖ§Ãû
 git push origin master
 
-æ™®é€šä¸Šä¼ 
+ÆÕÍ¨ÉÏ´«
 git add .
-git commit -m "æ³¨é‡Š"
-// git push ç½‘å€ åˆ†æ”¯å
+git commit -m "×¢ÊÍ"
+// git push ÍøÖ· ·ÖÖ§Ãû
 git push origin master
 
-ä»Žè¿œç¨‹åº“å…‹éš†ï¼Œè¿œç¨‹ä»“åº“é»˜è®¤åorigin
-git clone ç½‘å€
+´ÓÔ¶³Ì¿â¿ËÂ¡£¬Ô¶³Ì²Ö¿âÄ¬ÈÏÃûorigin
+git clone ÍøÖ·
 
 
 
-â€¦or create a new repository on the command line
+¡­or create a new repository on the command line
 echo "# learngit" >> README.md
 git init
 git add README.md
@@ -79,11 +84,11 @@ git commit -m "first commit"
 git remote add origin https://github.com/StrongerL/learngit.git
 git push -u origin master
 
-â€¦or push an existing repository from the command line
+¡­or push an existing repository from the command line
 git remote add origin https://github.com/StrongerL/learngit.git
 git push -u origin master
 
-â€¦or import code from another repository
+¡­or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
 
