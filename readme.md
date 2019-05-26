@@ -35,10 +35,10 @@ git的几个重要概念
   
 ## 版本回退
 `HEAD`  
-在git中使用HEAD代标版本库中最新的一次提交，上一次为HEAD^，上上一次为HEAD^^，上10次为HEAD~10。  
+在git中使用HEAD代标版本库中当前版本，HEAD上一次commit（不包括reset）为HEAD^，上上一次为HEAD^^，上10次为HEAD~10。  
   
 `git log`  
-显示从最近到最远的提交日志，参数--pretty=oneline（即使用git log --pretty=oneline）可以简洁的显示历史，每行显示一次提交
+显示从最近到最远的commit日志，参数--pretty=oneline（即使用git log --pretty=oneline）可以简洁的显示历史，每行显示一次提交
 如下：  
 ```
 git log --pretty=oneline  
@@ -49,8 +49,33 @@ a1cb6c1e405014f34b795c858f6c99d8ace5b578 添加git的几个基本概念
 ```
 前边的一串数字和字母是commit id（版本号），是一个SHA1计算出来的一个非常大的数字，用十六进制表示。  
   
+`git reset`  
+更改到指定版本，工作区和版本库（版本库是通过更改HEAD指针）都会更改  
+`git reset --hard HEAD`是回退到版本库最新的一次提交  
+`git reset --hard commit id`回退到指定commit id的版本commit id不需要写全，写前几位就可以。
+  
+`git reflog`  
+显示版本更改的所有日志，包括commit和reset，如果我们回退到之前的版本又想要再回到在最新的版本，就可以使用这个命令来查找到对应的commit id并使用`git reset`命令换到指定版本。  
+  
+## 撤销修改
+`git checkout -- 文件名`  
+撤销工作区修改，两种情况：  
+暂存区不为空，回退到暂存区的状态；   
+暂存区为空，回退到版本库当前状态。  
+  
+`git reset HEAD 文件名`  
+丢弃暂存区的修改。  
+  
 `git reset --hard HEAD`  
-回退到上个版本
+已经提交到版本库，可以使用`git reset`回退到之前版本。  
+  
+## 删除文件
+`git rm 文件名`  
+不再跟踪该文件，但是不会从硬盘上删除。  
+  
+
+  
+
 
 
 
