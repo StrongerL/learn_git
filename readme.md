@@ -71,57 +71,32 @@ a1cb6c1e405014f34b795c858f6c99d8ace5b578 添加git的几个基本概念
   
 ## 删除文件
 `git rm 文件名`  
-不再跟踪该文件，但是不会从硬盘上删除。  
+相当于`rm 文件名` + `git add 文件名` ，即将本地文件删除之后，将这种修改从工作区提交到暂存区。  
+
+`git rm --cached 文件名`  
+删除git中的文件，但是在本地保留该文件。  
   
 ## 远程仓库
 SSH密钥  
 1. 创建SSH密钥（如果已经有了可以跳过）  
 `ssh-keygen -t rsa -C "邮件地址"` ，该命令在用户主目录里生成.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
 2. 登陆GitHub，打开“Account settings”，“SSH Keys”页面，然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容。github允许有多个SSH Key。
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br /><br /><br /><br /><br /><br /><br /><br />
-初次上传  
-git init  
-git remote add origin 网址  
-git add .  
-git commit -m "注释"  
-// git push 网址 分支名  
-git push origin master  
   
-普通上传  
-git add .  
-git commit -m "注释"  
-// git push 网址 分支名  
-git push origin master  
+添加远程库  
+1. github上创建远程库（不使用github自建服务器也可以也可以）
+2. 在本地创建git仓库（已有仓库则可以跳过这一步）
+   `git init`  
+   `git add .`  
+   `git commit -m "注释"`    
+3. 在本地git版本库中添加远程库网址，网址有多个，不同的网址对应不同的传输协议。   
+   `git remote add origin 网址 `  
+4. 将本地库push到远程库
+   初次push使用`git push -u origin master`  
+   之后使用`git push origin master`  
   
-从远程库克隆，远程仓库默认名origin  
-git clone 网址  
+从远程库克隆  
+1. `git clone 网址`  
+2. 将本地库push到远程库
+   初次push使用`git push -u origin master`  
+   之后使用`git push origin master` 
   
-
-
-…or create a new repository on the command line  
-echo "# learngit" >> README.md  
-git init  
-git add README.md  
-git commit -m "first commit"  
-git remote add origin https://github.com/StrongerL/learngit.git  
-git push -u origin master  
-
-…or push an existing repository from the command line  
-git remote add origin https://github.com/StrongerL/learngit.git  
-git push -u origin master  
-
-…or import code from another repository  
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.  
