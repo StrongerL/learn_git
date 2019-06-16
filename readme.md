@@ -1,5 +1,5 @@
 # 一个简洁的git教程  
-https://www.liaoxuefeng.com/wiki/896043488029600/898732792973664   
+https://www.liaoxuefeng.com/wiki/896043488029600   
   
 ## 重要概念
 **工作区（Working Directory）**  
