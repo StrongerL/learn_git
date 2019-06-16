@@ -119,4 +119,9 @@ SSH密钥
 `git log --graph`命令可以看到分支合并图
   
   
+分支合并的方式  
+默认为Fast Forward，即无冲突的话直接更改指针，不会产生commit。  
+可以使用`git merge --no-ff`强制禁用Fast Forward，在合并时会产生一次commit。  
+  
+
 
