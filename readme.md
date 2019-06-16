@@ -77,12 +77,12 @@ a1cb6c1e405014f34b795c858f6c99d8ace5b578 添加git的几个基本概念
 删除git中的文件，但是在本地保留该文件。  
   
 ## 远程仓库
-SSH密钥  
+**SSH密钥**  
 1. 创建SSH密钥（如果已经有了可以跳过）  
 `ssh-keygen -t rsa -C "邮件地址"` ，该命令在用户主目录里生成.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
 2. 登陆GitHub，打开“Account settings”，“SSH Keys”页面，然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容。github允许有多个SSH Key。
   
-添加远程库  
+**添加远程库**  
 1. github上创建远程库（不使用github自建服务器也可以也可以）
 2. 在本地创建git仓库（已有仓库则可以跳过这一步）
    `git init`  
@@ -94,11 +94,15 @@ SSH密钥
    初次push使用`git push -u origin master`  
    之后使用`git push origin master`  
   
-从远程库克隆  
+**从远程库克隆**  
 1. `git clone 网址`  
 2. 将本地库push到远程库
    初次push使用`git push -u origin master`  
-   之后使用`git push origin master` 
+   之后使用`git push origin master`   
+  
+`git remote [-v]`  
+查看远程库信息。  
+
   
 ## 分支管理
 **分支管理基础**  
