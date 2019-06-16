@@ -113,7 +113,10 @@ SSH密钥
 `git branch -d 分支名`  
 删除指定分支。  
   
-
+  
 分支冲突处理  
-master
+两个分支如果出现冲突，那么执行`git merge 分支名`时会出现错误，可以执行`git merge --abort`放弃合并，也可以手动解决冲突后执行`git add 文件名`+`git commit -m "注释“`命令完成合并。
+`git log --graph`命令可以看到分支合并图
+  
+  
 
