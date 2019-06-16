@@ -101,6 +101,7 @@ SSH密钥
    之后使用`git push origin master` 
   
 ## 分支管理
+分支管理基础  
 `git branch`  
 查看分支，当前所在分支前有一个*符号。  
   
@@ -116,12 +117,15 @@ SSH密钥
   
 分支冲突处理  
 两个分支如果出现冲突，那么执行`git merge 分支名`时会出现错误，可以执行`git merge --abort`放弃合并，也可以手动解决冲突后执行`git add 文件名`+`git commit -m "注释“`命令完成合并。
-`git log --graph`命令可以看到分支合并图
+`git log --graph`命令可以看到分支合并图。  
   
   
 分支合并的方式  
 默认为Fast Forward，即无冲突的话直接更改指针，不会产生commit。  
 可以使用`git merge --no-ff`强制禁用Fast Forward，在合并时会产生一次commit。  
   
+  
+BUG分支  
+当前分支任务未完成因此不能commit，但是需要切换到其他分支，可以使用`stash`命令。  
 
 
