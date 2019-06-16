@@ -101,4 +101,11 @@ SSH密钥
    之后使用`git push origin master` 
   
 ## 分支管理
+`git branch`  
+查看分支，当前所在分支前有一个*符号。  
+  
+`git checkout -b 分支名`  
+创建新的分支并切换到新的分支，等同于`git branch 分支名`（创建新的分支） + `git checkout 分支名`（切换到指定分支）。  
+  
+
 
