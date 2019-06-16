@@ -151,3 +151,10 @@ a1cb6c1e405014f34b795c858f6c99d8ace5b578 添加git的几个基本概念
   
 `git checkout -b 分支名 origin/分支名`  
 从远程仓库抓取分支，克隆远程仓库之后只能看到master分支，其他分支需要手动抓取。  
+  
+`git pull`  
+push出现冲突时从远程仓库pull下来最新的版本，对比修改之后add、commit、push即可。如果出现"There is no tracking information for the current branch. Please specify which branch you want to merge with."的错误，说明是本地的分支和远程仓库的分支没有对应，使用`git branch --set-upstream-to=origin/远程仓库分支名 本地分支名`对应后再push。  
+  
+`rebase`  
+将本地提交历史整理成直线。  
+  
