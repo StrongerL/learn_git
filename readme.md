@@ -107,5 +107,10 @@ SSH密钥
 `git checkout -b 分支名`  
 创建新的分支并切换到新的分支，等同于`git branch 分支名`（创建新的分支） + `git checkout 分支名`（切换到指定分支）。  
   
-
+`git merge 分支名`  
+将当前分支和指定分支合并。  
+  
+`git branch -d 分支名`  
+删除指定分支。  
+  
 
