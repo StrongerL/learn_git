@@ -101,7 +101,7 @@ SSH密钥
    之后使用`git push origin master` 
   
 ## 分支管理
-分支管理基础  
+**分支管理基础**  
 `git branch`  
 查看分支，当前所在分支前有一个*符号。  
   
@@ -112,20 +112,29 @@ SSH密钥
 将当前分支和指定分支合并。  
   
 `git branch -d 分支名`  
-删除指定分支。  
+删除指定分支，如果还未合并就要删除，需要使用`git branch -D 分支名`   
   
   
-分支冲突处理  
+**分支冲突处理**  
 两个分支如果出现冲突，那么执行`git merge 分支名`时会出现错误，可以执行`git merge --abort`放弃合并，也可以手动解决冲突后执行`git add 文件名`+`git commit -m "注释“`命令完成合并。
 `git log --graph`命令可以看到分支合并图。  
   
   
-分支合并的方式  
+**分支合并的方式**  
 默认为Fast Forward，即无冲突的话直接更改指针，不会产生commit。  
 可以使用`git merge --no-ff`强制禁用Fast Forward，在合并时会产生一次commit。  
   
   
-BUG分支  
+**BUG分支**  
 当前分支任务未完成因此不能commit，但是需要切换到其他分支，可以使用`stash`命令。  
+
+`git stash`  
+保存当前工作空间。  
+
+`git stash list`  
+查看当前所有的stash，序号0代表最新的stash。  
+
+`git stash pop`  
+默认恢复最新的stash并删除，相当于`git stash apply`（恢复stash） + `git stash drop`（删除stash）。也可以在该命令后添加stash序号恢复指定stash。
 
 
