@@ -149,6 +149,6 @@ a1cb6c1e405014f34b795c858f6c99d8ace5b578 添加git的几个基本概念
 `git push origin --delete 分支名`  
 删除远程仓库的指定分支，不会删除本地的分支。  
   
-
-
+`git checkout -b 分支名 origin/分支名`  
+从远程仓库抓取分支，克隆远程仓库之后只能看到master分支，其他分支需要手动抓取。  
   
