@@ -140,5 +140,15 @@ a1cb6c1e405014f34b795c858f6c99d8ace5b578 添加git的几个基本概念
 
 `git stash pop`  
 默认恢复最新的stash并删除，相当于`git stash apply`（恢复stash） + `git stash drop`（删除stash）。也可以在该命令后添加stash序号恢复指定stash。
+  
+  
+**多人协作**  
+`git push origin master`  
+向远程仓库推送指定分支。  
+  
+`git push origin --delete 分支名`  
+删除远程仓库的指定分支，不会删除本地的分支。  
+  
 
 
+  
