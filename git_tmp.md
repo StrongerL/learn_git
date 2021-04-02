@@ -3,29 +3,11 @@
 [https://github.com/pcottle/learnGitBranching](https://github.com/pcottle/learnGitBranching)
 
 ```shell
-# 提交
-git commit -m "commment"
-
-# ============== 分支 =================
-# 创建分支
-git branch <branch_name>
-# 切换分支
-# 切换分支时最好保证git的状态是clean，否则可能会出现如下几种情况：
-# 未管理/未添加到暂存区/未提交 的修改与切换的目的分支有冲突，切换失败
-# 未管理/未添加到暂存区/未提交 的修改与切换的目的分支无冲突，切换成功。如果在新分支上放弃了上述修改，切回原分支后，这些修改也会丢失。简而言之，切换分支只会恢复目的分支提交过的修改。
-git checkout <branch_name>
-# 创建并切换分支
-git checkout -b <branch_name>
-# 当前分支合并其他分支
-git merge <branch_name>
-# 将当前分支的修改以线性的方式合并到其他分支
-git rebase <branch_name>
-
 # ================== 移动分支 ==============
 # HEAD
 # HEAD 是一个对当前检出记录的符号引用 —— 也就是指向你正在其基础上进行工作的提交记录。
-# HEAD 一般指向当前的分支
-# HEAD 也可以直接指向提交记录，我们称为 分离的 HEAD
+# 
+# 
 # 让 HEAD 直接指向提交记录
 git checkout <commit_id>
 
